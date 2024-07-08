@@ -1,0 +1,133 @@
+
+.container {
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+}
+
+.title{
+    color: aliceblue;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title span{
+    color: rgb(43, 220, 20);
+    margin-left: 1rem;
+}
+
+.btn_start {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-size: 1.2rem;
+    color: rgb(43, 220, 20);
+    transition: ease-out 0.3s;
+    margin: auto;
+}
+.btn_start:hover {
+    transition: ease-out 0.3s;
+    background:  rgb(43, 220, 20);
+    color: #1f3540;
+}
+
+.boxes {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background: #1f3540;
+    border: 5px solid #0f1b21;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.board{
+    height: 500px;
+    width: 564px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.boxes img {
+    margin: 50px 50px;
+}
+
+.title img {
+    padding: 0px 10px;
+    height: 50px;
+}
+
+@media(max-width:540px){
+    .board{
+        width: 100%;
+        height: 400px;
+        padding: 0.5rem;
+    }
+    .boxes {
+        height: 120px;
+        width: 120px;
+    }
+    .boxes img {
+        margin: 30px 30px;
+    }
+}
+
+@media(max-width:375px){
+    .board{
+        width: 100%;
+        height: 400px;
+        padding: 0.5rem;
+    }
+    .boxes {
+        height: 100px;
+        width: 100px;
+    }
+    .boxes img {
+        margin: 30px 30px;
+    }
+    .title  {
+    font-size: 2rem;
+    }
+    .title img {
+        padding: 7px 15px;
+        height: 30px;
+    }
+}
+
+@media(max-width:325px){
+    .board{
+        width: 100%;
+        height: 300px;
+    }
+    .boxes {
+        height: 90px;
+        width: 90px;
+    }
+    .boxes img {
+        margin: 25px 25px;
+    }
+    .title  {
+    font-size: 1.7rem;
+    }
+    .title img {
+        padding: 7px 15px;
+        height: 30px;
+    }
+    .btn_start {
+        width: 200px;
+        height: 50px;
+        font-size: 1.2rem;
+        margin: auto 0;
+    }
+}
